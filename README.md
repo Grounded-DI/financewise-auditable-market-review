@@ -21,6 +21,19 @@ The analysis compares:
 
 It is a comparative architecture and evidence-control analysis, not a performance study.
 
+## Executable FinanceWise Replay Evidence
+
+[FinanceWise transaction-to-covenant replay — October 19, 2026](https://github.com/Grounded-DI/grounded-di-replay-certificate-registry/tree/main/benchmarks/2026-10-19-financewise-transaction-covenant-replay) is a separate, public, runnable-evidence record for a controlled financial workflow. Its documented results include:
+
+- **Two canonical executions** with identical outputs across **five recorded artifact hashes**.
+- **15 of 15 recorded controls passed:** 14 mutated-input pipeline executions and one mutated-intermediate downstream execution.
+- A **separately implemented internal evaluator** recalculated the source-bound financial values and decision state without importing the primary stage logic.
+- Canonical synthetic cash of **128,000** and current liabilities of **32,000** yield a ratio of **4.0**, exceeding the recorded **1.5** covenant threshold. Nevertheless, the final disposition is **`REVIEW_REQUIRED`** because unresolved record-level evidence remains.
+
+**Why this matters:** a favorable financial calculation is not the same as an authorized decision. The trace preserves the relationship among inputs, governing rules, arithmetic, exceptions, and the final state. [Read the replay report](https://github.com/Grounded-DI/grounded-di-replay-certificate-registry/tree/main/benchmarks/2026-10-19-financewise-transaction-covenant-replay/REPORT.md) or [inspect its recorded result](https://github.com/Grounded-DI/grounded-di-replay-certificate-registry/tree/main/benchmarks/2026-10-19-financewise-transaction-covenant-replay/FINAL_RESULT.json).
+
+The covenant benchmark is a bounded synthetic workflow, **not** an execution of the proprietary FWO-01–FWO-15 formula suite. It complements the institutional market-review comparison in this repository.
+
 ## Evidence and Provenance
 
 - [FinanceWise vs. J.P. Morgan 2026 Mid-Year Outlook — Comparative Analysis](FinanceWise_vs_JPMorgan_2026_MidYear_Outlook_Comparative_Analysis.pdf)
